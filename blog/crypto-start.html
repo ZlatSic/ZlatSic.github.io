@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Starting out with crypto mining | zlatsic</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" type="image/svg" href="/favicon.svg">
+    <meta name="description" content="SCADA and AI expert">
+    
+    <link rel="preload" href="/assets/css/0.styles.5f1712bf.css" as="style"><link rel="preload" href="/assets/js/app.fcc6d007.js" as="script"><link rel="preload" href="/assets/js/2.ec559216.js" as="script"><link rel="preload" href="/assets/js/14.d7e001d4.js" as="script"><link rel="preload" href="/assets/js/6.7e00f1d0.js" as="script"><link rel="preload" href="/assets/js/5.a82aa520.js" as="script"><link rel="prefetch" href="/assets/js/10.bd306ae3.js"><link rel="prefetch" href="/assets/js/11.fc689b92.js"><link rel="prefetch" href="/assets/js/12.8bce7c6e.js"><link rel="prefetch" href="/assets/js/13.5567a250.js"><link rel="prefetch" href="/assets/js/15.1bae2a1f.js"><link rel="prefetch" href="/assets/js/16.45b37f8d.js"><link rel="prefetch" href="/assets/js/17.70d7ddca.js"><link rel="prefetch" href="/assets/js/18.ddb41f62.js"><link rel="prefetch" href="/assets/js/19.7a2ff5f8.js"><link rel="prefetch" href="/assets/js/20.4e98fc3c.js"><link rel="prefetch" href="/assets/js/21.edb9e06c.js"><link rel="prefetch" href="/assets/js/22.7faa5aca.js"><link rel="prefetch" href="/assets/js/23.a86334ff.js"><link rel="prefetch" href="/assets/js/24.b3b55276.js"><link rel="prefetch" href="/assets/js/3.d4e8ae8b.js"><link rel="prefetch" href="/assets/js/4.c3cf8efa.js"><link rel="prefetch" href="/assets/js/7.20a61322.js"><link rel="prefetch" href="/assets/js/8.9bcb69e9.js"><link rel="prefetch" href="/assets/js/9.6a6f9cee.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5f1712bf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="global-layout"><div class="content"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zlatsic</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  Blog
+</a></div><div class="nav-item"><a href="/portfolio/" class="nav-link">
+  Portfolio
+</a></div><div class="nav-item"><a href="/cv.html" class="nav-link">
+  CV
+</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  Blog
+</a></div><div class="nav-item"><a href="/portfolio/" class="nav-link">
+  Portfolio
+</a></div><div class="nav-item"><a href="/cv.html" class="nav-link">
+  CV
+</a></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="frontmatter-title"><a href="#frontmatter-title" class="header-anchor">#</a> Starting out with crypto mining</h1> <p>As of writing this blog post, crypto has passed the $1 billion market cap.
+Might be a bit late to get into it, but who knows how its value will shift. I
+decided to write this post to help any striving crypto beginners make their
+decision whether to go into this and what were the first steps I took.</p> <h2 id="context"><a href="#context" class="header-anchor">#</a> Context</h2> <p>Recently I realized that my GTX 1050 Ti just wasn't cutting it when it came to
+training deep learning models. I decided to buy a new GPU, and figured I'd
+invest a bit in it, since I plan to be using it quite a lot in the future. I
+made up my mind and decided to get the new RTX 3070, figuring that 5888 CUDA
+cores are enough to satisfy my machine learning needs until retirement. I
+ordered it, it cost almost as much as my whole computer did 3 years back, but I
+figured it's an investment.</p> <p>When the GPU came, I installed it with no problems and, after fiddling around
+with the nVidia drivers on Linux, managed to set it up nicely. I was glad to
+see my training times go down, but a realization suddenly hit me - I bought
+this GPU and I can use it to train deep learning models, but why not also use
+it when it's idle? Then I decided to look up crypto GPU mining.</p> <p>I decided to try mining ethereum, since it's the second most popular
+cryptocurrency after Bitcoin and, from reading various tech blog posts and
+subreddits, it seemed like mining it with a GPU was still viable. Not to
+mention that its prices jumped a couple of days earlier.</p> <h2 id="setting-up"><a href="#setting-up" class="header-anchor">#</a> Setting up</h2> <p>Since I already set up the GPU to train machine learning models, I already
+installed all the neccessary drivers (nVidia kernel and CUDA). I did need to
+upgrade my CUDA version to 11, since the older ones weren't supported on the
+RTX 30 series. Next step was to download miner software. I chose
+<a href="https://phoenixminer.org/" target="_blank" rel="noopener noreferrer">PhoenixMiner<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, since, by user experience, it had
+slightly better hash rates and devfees than their competition.</p> <p>I also didn't have an ethereum wallet yet, so I needed to create that as well.
+I used a command line tool called <a href="https://geth.ethereum.org/" target="_blank" rel="noopener noreferrer">geth<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, a CLI
+that allows you to perform various ether-related actions, such as creating a
+new wallet or sending payments.</p> <p>With everything underway, I was ready to get started with mining!</p> <h2 id="a-very-hot-pitfall"><a href="#a-very-hot-pitfall" class="header-anchor">#</a> A very hot pitfall</h2> <p>I started the miner and immediately realized that my PC was becoming really
+hot. Big deal, I expected it, the Internet said it would. What I did not
+realize was that it was getting too hot - the GPU consumption was through the
+roof, everything was lagging until I killed the mining process. I checked out
+the miners command line arguments and saw that there was an option for mining
+intensity. I set it to a lower than default value and the problem stopped.
+Lesson of the day, RTFM.</p> <h2 id="pitfall-2-electric-boogaloo"><a href="#pitfall-2-electric-boogaloo" class="header-anchor">#</a> Pitfall 2: electric boogaloo</h2> <p>My mining operation was now running smoothly, but I still wasn't getting the
+hashrates I saw people online reporting with my GPU (even considering lower
+intensity). So I decided to overclock my GPU. It turned out that my power
+consumption was unneccessarily high so I dropped it from 280W to 130. I also
+underclocked the GPU core clock, but overclocked the memory clock. I used the
+guide found
+<a href="https://www.nicehash.com/blog/post/nvidia-rtx-3000-series-overclocking-guide-to-increase-mining-profits" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+to get the idea how much should I set my values.</p> <p>Now my mining was being done using less power, meaning the PC wasn't getting as
+hot as it used to (the GPU is around 57°C most of the time), but a new problem
+was introduced - the miner started reporting incorrect shares.</p> <h2 id="incorrect-shares"><a href="#incorrect-shares" class="header-anchor">#</a> Incorrect shares</h2> <p>Shares are, from a layman's perspective, proof of work you do within your ether
+mining pool. It can happen that a share is incorrect - meaning you don't
+receive ether for that share and that, basically, you worked for nothing on
+that share. With the setup I described above, I received around 50% incorrect
+shares, which was unacceptable.</p> <p>Luckily, tweaking my overclock settings proved to be enough to solve this. I
+dropped the memory overclock frequency and managed to get it working well
+(around 1 in 1000 shares is incorrect with the current setup).</p> <h2 id="affordability"><a href="#affordability" class="header-anchor">#</a> Affordability</h2> <p>I am currently working on around 50 MH/s which nets me around 0.00311 ETH
+daily - which, at the current value of ether, is around $4. Monthly, that gives
+me projections of earning between $100 and $150 (the price fluctiates and I
+have occasional downtimes).</p> <p>I don't know the exact numbers when it comes to electric consumption, but I
+don't think that the increase will be too large, I expect additional $6 to my
+standard costs - before mining, the PC was on most of the time, the biggest
+change now is that it stays on overnight as well. I can't calculate the exact
+change in consumption since what's relevant is not the exact consumption of the
+PC at the moment, but the difference from before I started mining. In any case,
+if my calculation was totally off, an increase up to 20-30% of the expected
+monthly profits is still acceptable.</p> <p>A thing that worries me more than electric consumption is the volatility of the
+currency itself. Ether is currently in a spike, meaning it might go down,
+meaning my $100 to $150 goes down as well. 1 ether is currently $1300, while,
+before the rapid growth it received in the last 2 months it was around $400,
+which means I might need to divide my monthly earnings with 3 if I want to be
+pessimistic. Still, the projections of people who do this for a living say it
+should grow, so maybe I worry uneccessarily. The fact I can't cash in at any
+time, but only after I pass the payout threshold on my pool of the mined ether
+(0.2eth - around 2 months) doesn't help with the sense of security. Either way,
+I'm not investing much into this anyway, so whatever happens, the risk is not
+too great.</p> <h2 id="conclusions"><a href="#conclusions" class="header-anchor">#</a> Conclusions</h2> <p>I described my setup, some problems I faced while getting to work and the
+current worries that I have regarding the affordability of the whole endevour.
+I hope this helps anyone making their mind whether they should get started with
+mining. I might update this post according to changes in the market, but the
+edits will be clearly marked.</p> <div id="disqus_thread"></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div></div> <footer><div class="social"><span>Social:</span> <a href="https://github.com/ZlatSic" target="blank_"><span class="ri-github-line icon"></span> <span class="label"> GitHub </span></a><a href="https://www.linkedin.com/in/zlatan-sicanica/" target="blank_"><span class="ri-linkedin-box-line icon"></span> <span class="label"> LinkedIn </span></a><a href="https://twitter.com/zlatsic" target="blank_"><span class="ri-twitter-line icon"></span> <span class="label"> Twitter </span></a><a href="https://www.instagram.com/zlatsic/" target="blank_"><span class="ri-instagram-line icon"></span> <span class="label"> Instagram </span></a><a href="https://www.youtube.com/channel/UCCbEay_pbywwDnoMZzxqaow/featured" target="blank_"><span class="ri-youtube-line icon"></span> <span class="label"> YouTube </span></a><a href="https://www.twitch.tv/zlatsic" target="blank_"><span class="ri-twitch-line icon"></span> <span class="label"> Twitch </span></a></div> <span class="copyright">
+            © 2021, Zlatan Sičanica
+        </span></footer> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.fcc6d007.js" defer></script><script src="/assets/js/2.ec559216.js" defer></script><script src="/assets/js/14.d7e001d4.js" defer></script><script src="/assets/js/6.7e00f1d0.js" defer></script><script src="/assets/js/5.a82aa520.js" defer></script>
+  </body>
+</html>
